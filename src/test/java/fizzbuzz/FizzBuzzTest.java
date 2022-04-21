@@ -23,6 +23,7 @@ public class FizzBuzzTest {
         for (int i = 1; i <= 100; i++)
             if ((i % 3 == 0) && !(i % 5 == 0)) {
                 assertEquals("Fizz", fizzBuzz.convertNumber(i));
+                System.out.println(fizzBuzz.convertNumber(i));
             }
     }
 
@@ -32,6 +33,7 @@ public class FizzBuzzTest {
         for (int i = 1; i <= 100; i++) {
             if (!(i % 3 == 0) && (i % 5 == 0)) {
                 assertEquals("Buzz", fizzBuzz.convertNumber(i));
+                System.out.println(fizzBuzz.convertNumber(i));
             }
         }
     }
@@ -42,6 +44,7 @@ public class FizzBuzzTest {
         for (int i = 1; i <= 100; i++) {
             if ((i % 3 == 0) && (i % 5 == 0)) {
                 assertEquals("FizzBuzz", fizzBuzz.convertNumber(i));
+                System.out.println(fizzBuzz.convertNumber(i));
             }
         }
     }
